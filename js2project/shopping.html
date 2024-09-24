@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shopping cart</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+      }
+      table {
+        text-align: left;
+        width: 700px;
+      }
+      thead {
+        font-size: 1.5rem;
+      }
+      caption {
+        height: 60px;
+        font-size: 3rem;
+        font-weight: 400;
+        color: #fff;
+        background-color: purple;
+        margin-bottom: 0.5rem;
+        border-radius: 8px;
+      }
+      tfoot {
+        width: 100%;
+        height: 60px;
+        color: purple;
+        border: 2px solid purple;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <table>
+        <caption>
+          shopping cart
+        </caption>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>count</th>
+            <th>total</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr style="height: 60px">
+            <td
+              class="total-price"
+              style="font-size: 1.2rem; font-weight: bold"
+            >
+              Total Price :
+            </td>
+            <td style="font-weight: bold"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <script src="./script/scriptshopping.js"></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docode Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <p id="header-title">Shop Training Js</p>
+    </header>
+    <main>
+      <div class="search">
+        <a href="./shopping.html" target="_blank" class="link-shop"
+          ><i
+            title="shopping cart"
+            class="fa fa-briefcase"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <input
+          id="search-word"
+          class="text-input"
+          type="text"
+          placeholder="Search By Name ..."
+        />
+        <div class="price-search-area">
+          <input
+            id="search-price"
+            class="text-input"
+            type="number"
+            placeholder="Enter Price"
+          />
+          <button class="search-button">Go</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="side-bar">
+          <button class="filters active" data-filter="all">All</button>
+          <button class="filters" data-filter="men's clothing">
+            men's clothing
+          </button>
+          <button class="filters" data-filter="jewelery">jewelery</button>
+          <button class="filters" data-filter="electronics">electronics</button>
+          <button class="filters" data-filter="women's clothing">
+            women's clothing
+          </button>
+        </div>
+        <!-- <div class="products"> -->
+        <!-- <div class="product-items" data-category="tech">
+            <img src="./img/iphone.png" alt="Iphone" />
+            <div class="item-down">
+              <h3 class="caption">Iphone 14 Pro Max</h3>
+              <div class="price-count">
+                <span>130</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="tech">
+            <img src="./img/airpods.png" alt="airpods" />
+            <div class="item-down">
+              <h3 class="caption">airpods</h3>
+              <div class="price-count">
+                <span>80</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="cloth">
+            <img src="./img/bag.png" alt="bag" />
+            <div class="item-down">
+              <h3 class="caption">cool bag</h3>
+              <div class="price-count">
+                <span>65</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="health">
+            <img src="./img/cream.png" alt="cream" />
+            <div class="item-down">
+              <h3 class="caption">sunshine cream</h3>
+              <div class="price-count">
+                <span>21</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="cloth">
+            <img src="./img/jacket.png" alt="jacket" />
+            <div class="item-down">
+              <h3 class="caption">leather jacket</h3>
+              <div class="price-count">
+                <span>700</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="health">
+            <img src="./img/shampoo.png" alt="shampoo" />
+            <div class="item-down">
+              <h3 class="caption">Sehat Shampoo</h3>
+              <div class="price-count">
+                <span>21</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="cloth">
+            <img src="./img/shoes.png" alt="shoes" />
+            <div class="item-down">
+              <h3 class="caption">running shoes</h3>
+              <div class="price-count">
+                <span>90</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="health">
+            <img src="./img/vitamin.png" alt="vitamin" />
+            <div class="item-down">
+              <h3 class="caption">vitamin pils</h3>
+              <div class="price-count">
+                <span>12</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-items" data-category="tech">
+            <img src="./img/watch.png" alt="watch" />
+            <div class="item-down">
+              <h3 class="caption">swiss watch</h3>
+              <div class="price-count">
+                <span>600</span>
+                <div class="insert-count">
+                  <input class="input-count" type="number" />
+                  <button class="add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        <!-- </div> -->
+      </div>
+      <pre id="cart"></pre>
+    </main>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
